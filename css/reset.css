@@ -56,7 +56,7 @@ select {
 a {
   text-decoration: none;
   color: inherit;
-  /* outline: none; */
+  outline: none;
 }
 
 button {
