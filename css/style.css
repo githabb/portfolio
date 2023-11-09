@@ -433,6 +433,7 @@ body {
 }
 
 .clients__video:focus {
+  outline: transparent;
   box-shadow: 0 0 0 3px rgba(35, 82, 222, 0.5);
 }
 
@@ -543,6 +544,7 @@ body {
 }
 
 .contacts__link:focus {
+  outline: transparent;
   box-shadow: 0 0 0 2px rgba(35, 82, 222, 0.5);
 }
 
@@ -574,6 +576,7 @@ body {
 }
 
 .social__img:focus {
+  outline: transparent;
   border-radius: 3px;
   box-shadow: 0 0 0 2px rgba(35, 82, 222, 0.5);
 }
