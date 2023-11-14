@@ -560,7 +560,7 @@ body {
   margin-right: 20px;
 }
 
-.social__img {
+.social__link {
   width: 44px;
   height: 44px;
   border-radius: 3px;
@@ -568,21 +568,18 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  transition: opacity 0.5s, box-shadow 0.5s, outline 0.5s;
+  transition: opacity 0.5s, box-shadow 0.5s;
 }
 
-.social__img:hover {
+.social__link:hover {
   opacity: 0.7;
 }
 
-.social__img:focus {
-  outline: transparent;
-  border-radius: 3px;
+.social__link:focus {
   box-shadow: 0 0 0 2px rgba(35, 82, 222, 0.5);
 }
 
-.social__img:active {
-  border-radius: 13px;
+.social__link:active {
   box-shadow: 3px 3px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
@@ -622,14 +619,14 @@ body {
 .form__input {
   display: block;
   width: 100%;
+  color: #9c9cab;
   padding: 13px 15px;
   background-color: #f6f6f8;
   margin-top: 10px;
-  transition: color 0.5s, outline 0.5s, box-shadow 0.5s;
 }
 
 .form__input::placeholder {
-  opacity: #9c9cab;
+  transition: color 0.3s;
 }
 
 .form__input:hover::placeholder {
@@ -637,7 +634,6 @@ body {
 }
 
 .form__input:focus {
-  outline: transparent;
   box-shadow: 0 0 0 3px rgba(35, 82, 222, 0.5);
 }
 
