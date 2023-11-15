@@ -14,6 +14,24 @@
     top: 23px;
     z-index: 5;
   }
+  /* .menu__btn::before {
+    top: 0;
+  } */
+  .menu__btn::after {
+    bottom: 0;
+  }
+  .menu__btn.menu__list--active span {
+    transform: scale(0);
+  }
+  .menu__btn.menu__list--active::before {
+    top: 20%;
+    transform: rotate(-45deg) translate(0, -50%);
+  }
+  .menu__btn.menu__list--active::after {
+    bottom: 20%;
+    transform: rotate(45deg) translate(0, 50%);
+  }
+
   .menu__list {
     text-align: center;
     padding-top: 81px;
