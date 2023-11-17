@@ -78,6 +78,34 @@ body {
   opacity: 0.5;
 }
 
+.menu__btn {
+  width: 30px;
+  height: 20px;
+  display: none;
+}
+.menu__btn span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #ffffff;
+  position: absolute;
+}
+.menu__btn::after,
+.menu__btn::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: #ffffff;
+  left: 0;
+}
+.menu__btn::after {
+  top: 0;
+}
+.menu__btn::before {
+  bottom: 0;
+}
+
 .header {
   height: 100vh;
   background-repeat: no-repeat;
@@ -619,14 +647,13 @@ body {
 .form__input {
   display: block;
   width: 100%;
-  color: #9c9cab;
   padding: 13px 15px;
   background-color: #f6f6f8;
   margin-top: 10px;
 }
 
 .form__input::placeholder {
-  transition: color 0.3s;
+  color: #9c9cab;
 }
 
 .form__input:hover::placeholder {
@@ -645,32 +672,3 @@ body {
   display: flex;
   justify-content: center;
 }
-
-.menu__btn {
-  width: 30px;
-  height: 20px;
-  display: none;
-}
-.menu__btn span {
-  display: block;
-  height: 2px;
-  width: 100%;
-  background-color: #ffffff;
-  position: absolute;
-}
-.menu__btn::after,
-.menu__btn::before {
-  content: "";
-  position: absolute;
-  width: 30px;
-  height: 2px;
-  background-color: #ffffff;
-  left: 0;
-}
-.menu__btn::after {
-  top: 0;
-}
-.menu__btn::before {
-  bottom: 0;
-}
-

@@ -24,11 +24,11 @@
     transform: scale(0);
   }
   .menu__btn.menu__list--active::before {
-    top: 20%;
+    top: 15%;
     transform: rotate(-45deg) translate(0, -50%);
   }
   .menu__btn.menu__list--active::after {
-    bottom: 20%;
+    bottom: 15%;
     transform: rotate(45deg) translate(0, 50%);
   }
 
