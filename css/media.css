@@ -157,7 +157,7 @@
     margin-top: 50px;
   }
   .title::after {
-    bottom: 10px;
+    bottom: 11px;
   }
   .skills__inner {
     padding-bottom: 50px;
@@ -225,7 +225,7 @@
   }
   .header__subject {
     font-size: 72px;
-    line-height: 35px;
+    line-height: 55px;
   }
   .header__link {
     bottom: 10px;
