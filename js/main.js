@@ -7,6 +7,6 @@ $(function () {
 });
 
 document.querySelector(".menu__btn").addEventListener("click", function () {
-  this.classList.toggle("menu__list--active");
+  this.classList.toggle("active");
   document.querySelector(".menu__list").classList.toggle("menu__list--active");
 });
