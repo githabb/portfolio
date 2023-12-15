@@ -23,7 +23,7 @@
   }
 
   .menu__btn:active {
-    outline: 2px solid rgba(14, 173, 59, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
   }
 
   .menu__btn-line {
@@ -85,6 +85,7 @@
     z-index: 1;
     height: 100vh;
     transition: transform 0.5s;
+    margin-top: 18px;
   }
 
   .menu__list.menu__list--active {
@@ -93,12 +94,11 @@
 
   .menu__item:not(:last-child) {
     margin-right: 0;
-    padding-top: 18px;
   }
 
   .menu__link {
     display: block;
-    padding: 10px 0;
+    padding: 11px 0;
   }
 
   .menu__link:active {
@@ -171,10 +171,6 @@
   .menu__list {
     padding: 65px 0;
   }
-
-  .menu__link {
-    padding: 8px 0;
-  }
 }
 
 @media (max-width: 768px) {
@@ -220,6 +216,8 @@
 
   .services__title {
     text-align: left;
+    font-size: 20px;
+    line-height: 26px;
   }
 
   .services__text {
@@ -282,7 +280,7 @@
   }
 
   .menu {
-    padding-top: 10px;
+    padding-top: 15px;
   }
 
   .header__content {
@@ -301,6 +299,10 @@
 
   .header__link {
     bottom: 5px;
+  }
+
+  .section {
+    padding: 50px 0;
   }
 
   .menu__list {
