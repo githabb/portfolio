@@ -63,31 +63,7 @@ body {
 }
 
 .menu__btn {
-  width: 30px;
-  height: 23px;
   display: none;
-}
-.menu__btn .menu__btn-line {
-  display: block;
-  height: 2px;
-  width: 100%;
-  background-color: #ffffff;
-  position: absolute;
-}
-.menu__btn::after,
-.menu__btn::before {
-  content: "";
-  position: absolute;
-  width: 30px;
-  height: 2px;
-  background-color: #ffffff;
-  left: 0;
-}
-.menu__btn::after {
-  top: 0;
-}
-.menu__btn::before {
-  bottom: 0;
 }
 
 .logo {
@@ -177,6 +153,7 @@ body {
 }
 
 .header__subject {
+  display: block;
   font-size: 90px;
   font-weight: 700;
   line-height: 130%;
@@ -280,15 +257,12 @@ body {
 .services__items {
   display: flex;
   justify-content: space-between;
+  gap: 90px;
 }
 
 .services__item {
   width: 100%;
-  margin-bottom: 30px;
-}
-
-.services__item:not(:last-child) {
-  margin-right: 90px;
+  max-width: 330px;
 }
 
 .services__item::before {
@@ -387,10 +361,11 @@ body {
   justify-content: center;
   align-items: center;
   padding: 0 50px;
+  gap: 100px;
 }
 
 .clients__quote {
-  margin-right: 100px;
+  /* margin-right: 100px; */
   max-width: 400px;
   width: 100%;
   font-size: 24px;
