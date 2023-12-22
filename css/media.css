@@ -147,6 +147,81 @@
     flex-wrap: wrap;
     justify-content: space-around;
   }
+
+  /* adaptive2 */
+
+  .gallery__filters {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  .gallery__filter-item:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .gallery__btn {
+    padding: 7px 0;
+    display: block;
+    width: 100%;
+  }
+
+  .gallery__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    justify-items: center;
+    margin-bottom: 30px;
+  }
+
+  .clients__box {
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+
+  .report__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .report__item:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .report__text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .report__numbers {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .contacts__wrap {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .contacts__box {
+    margin: 0 auto 32px;
+  }
+
+  .contacts__text {
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .contacts__list {
+    text-align: left;
+  }
+
+  .form {
+    margin: 0 auto;
+    text-align: left;
+  }
 }
 
 @media (max-width: 992px) {
@@ -198,7 +273,6 @@
 
   .about__text {
     text-align: left;
-    padding-bottom: 50px;
   }
 
   .title {
@@ -210,10 +284,6 @@
     bottom: 11px;
   }
 
-  .skills__inner {
-    padding-bottom: 50px;
-  }
-
   .services__title {
     text-align: left;
     font-size: 20px;
@@ -222,6 +292,14 @@
 
   .services__text {
     text-align: left;
+  }
+
+  .contacts {
+    padding-top: 0;
+  }
+
+  .report__item {
+    width: calc(50% - 20px);
   }
 }
 
@@ -271,6 +349,58 @@
     font-size: 20px;
     line-height: 26px;
     margin-bottom: 15px;
+  }
+
+  /* adaptive2 */
+
+  .clients {
+    align-items: center;
+  }
+
+  .clients__box {
+    position: relative;
+  }
+
+  .clients__quote {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .clients__name {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .clients__video {
+    position: absolute;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    left: calc(50% + 25px);
+    top: 90px;
+  }
+
+  .clients__video::before {
+    width: 17px;
+    height: 20px;
+  }
+
+  .contacts__link {
+    display: block;
+    width: 100%;
+  }
+
+  .form__top {
+    flex-wrap: wrap;
+  }
+
+  .form__label {
+    width: 100%;
+  }
+
+  .form__label:not(:last-child) {
+    margin-right: 0;
   }
 }
 
