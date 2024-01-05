@@ -5,7 +5,7 @@ body {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 1.3;
 }
 
 .container {
@@ -18,7 +18,6 @@ body {
   display: inline-block;
   font-size: 48px;
   font-weight: 700;
-  line-height: 62px;
   margin-bottom: 60px;
   position: relative;
 }
@@ -40,7 +39,6 @@ body {
 .button {
   color: #fff;
   font-weight: 600;
-  line-height: 23px;
   padding: 12px 24px;
   background-color: #2352de;
   transition: outline 0.5s, background-color 0.5s, color 0.5s, box-shadow 0.5s;
@@ -66,6 +64,14 @@ body {
   display: none;
 }
 
+html {
+  scroll-behavior: smooth;
+
+  :target {
+    scroll-margin-top: 200px;
+  }
+}
+
 .logo {
   transition: opacity 0.5s, outline 0.5s;
 }
@@ -82,8 +88,22 @@ body {
   opacity: 0.5;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: #7792e0;
+  max-width: 100%;
+  padding-left: calc((100vw - 1170px) / 2);
+  padding-right: calc((100vw - 1170px) / 2);
+  padding-bottom: 25px;
+  z-index: 999;
+}
+
 .header {
-  height: 100vh;
+  max-height: 100vh;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -120,7 +140,6 @@ body {
 
 .menu__link {
   font-weight: 600;
-  line-height: 24px;
   text-decoration: underline 1px transparent;
   transition: text-decoration-color 0.5s, outline-offset 0.5s, opacity 0.5s;
 }
@@ -148,7 +167,6 @@ body {
 
 .header__title {
   font-size: 48px;
-  line-height: 62px;
   max-width: 70%;
 }
 
@@ -156,12 +174,10 @@ body {
   display: block;
   font-size: 90px;
   font-weight: 700;
-  line-height: 130%;
 }
 
 .header__link {
   font-weight: 600;
-  line-height: 23px;
   position: absolute;
   bottom: 30px;
   left: 50%;
@@ -237,7 +253,7 @@ body {
 
 .skills__text {
   font-weight: 600;
-  line-height: 18px;
+  line-height: 1;
   text-transform: uppercase;
 }
 
@@ -291,13 +307,12 @@ body {
 .services__title {
   font-size: 28px;
   font-weight: 600;
-  line-height: 36.4px;
   margin-bottom: 25px;
 }
 
 .services__text {
   font-size: 16px;
-  line-height: 25px;
+  line-height: 1.6;
 }
 
 /* gallery */
@@ -320,7 +335,7 @@ body {
 .gallery__btn {
   font-size: 24px;
   font-weight: 600;
-  line-height: 38px;
+  line-height: 1.6;
   text-decoration: underline 1px transparent;
   transition: color 0.5s, text-decoration-color 0.5s, outline-offset 0.5s,
     border-radius 0.5s;
@@ -365,11 +380,9 @@ body {
 }
 
 .clients__quote {
-  /* margin-right: 100px; */
   max-width: 400px;
   width: 100%;
   font-size: 24px;
-  line-height: 31px;
   font-style: italic;
   font-weight: 300;
 }
@@ -494,14 +507,13 @@ body {
 }
 
 .report__text {
-  line-height: 23px;
   margin-bottom: 20px;
 }
 
 .report__numbers {
   font-size: 44px;
   font-weight: 600;
-  line-height: 44px;
+  line-height: 1;
 }
 
 /* contacts */
@@ -522,7 +534,7 @@ body {
 
 .contacts__text {
   font-size: 16px;
-  line-height: 25px;
+  line-height: 1.6;
   margin-bottom: 30px;
 }
 
@@ -537,7 +549,6 @@ body {
 .contacts__link {
   color: #2352de;
   font-size: 16px;
-  line-height: 1.3;
   border-radius: 3px;
   text-decoration: underline 1px transparent;
   transition: text-decoration-color 0.5s, opacity 0.5s, box-shadow 0.5s;
@@ -603,7 +614,6 @@ body {
   margin-bottom: 30px;
   font-size: 14px;
   font-weight: 600;
-  line-height: 18px;
 }
 
 .form__label:not(:last-child) {

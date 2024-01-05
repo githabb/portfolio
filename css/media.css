@@ -1,6 +1,12 @@
 @media (max-width: 1200px) {
   .menu {
     padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .sticky {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .logo {
@@ -185,22 +191,8 @@
     gap: 15px;
   }
 
-  /* .report__item {
-    padding: 25px 15px;
-  }
-
-  .report__item::before {
-    width: 40px;
-    height: 35px;
-  } */
-
   .report__item:not(:last-child) {
     margin-right: 0;
-  }
-
-  .report__text {
-    font-size: 14px;
-    line-height: 18px;
   }
 
   .report__numbers {
@@ -233,6 +225,11 @@
 }
 
 @media (max-width: 992px) {
+  .sticky {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
   .section {
     padding: 50px 0;
   }
@@ -248,15 +245,34 @@
   }
 
   .header__link {
-    bottom: 10px;
+    bottom: 20px;
   }
 
   .menu__list {
     padding: 65px 0;
   }
+
+  .contacts__link {
+    padding: 7.5px 0;
+    display: block;
+    width: 100%;
+  }
+
+  html {
+    scroll-behavior: smooth;
+
+    :target {
+      scroll-margin-top: 100px;
+    }
+  }
 }
 
 @media (max-width: 768px) {
+  .sticky {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
   .menu__list {
     flex-wrap: wrap;
   }
@@ -312,9 +328,22 @@
     justify-content: space-between;
     width: calc(50% - 15px);
   }
+
+  html {
+    scroll-behavior: smooth;
+
+    :target {
+      scroll-margin-top: 150px;
+    }
+  }
 }
 
 @media (max-width: 576px) {
+  .sticky {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
   .report__item {
     padding: 25px 15px;
   }
@@ -405,10 +434,8 @@
     height: 20px;
   }
 
-  .contacts__link {
-    padding: 7.5px 0;
-    display: block;
-    width: 100%;
+  .report__text {
+    font-size: 14px;
   }
 
   .contacts__item:not(:last-child) {
@@ -425,6 +452,14 @@
 
   .form__label:not(:last-child) {
     margin-right: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+
+    :target {
+      scroll-margin-top: 140px;
+    }
   }
 }
 

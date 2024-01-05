@@ -27,22 +27,22 @@
 
                 <ul class="menu__list">
                     <li class="menu__item">
-                        <a class="menu__link" href="#">Про мене</a>
+                        <a class="menu__link" href="#aboutme_anchor">Про мене</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="#">Навички</a>
+                        <a class="menu__link" href="#skills_anchor">Навички</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="#">Послуги</a>
+                        <a class="menu__link" href="#services_anchor">Послуги</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="#">Портфоліо</a>
+                        <a class="menu__link" href="#portfolio_anchor">Портфоліо</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="#">Відгуки</a>
+                        <a class="menu__link" href="#clients_anchor">Відгуки</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="#">Контакти</a>
+                        <a class="menu__link" href="#contacts_anchor">Контакти</a>
                     </li>
                 </ul>
             </nav>
@@ -54,7 +54,7 @@
                         frontend-розробник
                     </span>
                 </h1>
-                <a class="header__link" href="#">
+                <a class="header__link" href="#seeworks_anchor">
                     дивитися роботи
                 </a>
             </div>
@@ -64,7 +64,7 @@
     <main class="main">
         <section class="about section">
             <div class="container">
-                <h2 class="title">
+                <h2 id="aboutme_anchor" class="title">
                     Про мене
                 </h2>
 
@@ -88,7 +88,7 @@
 
         <section class="skills section">
             <div class="container">
-                <h2 class="title">
+                <h2 id="skills_anchor" class="title">
                     Навички
                 </h2>
 
@@ -120,7 +120,7 @@
 
         <section class="services section">
             <div class="container">
-                <h2 class="title">
+                <h2 id="services_anchor" class="title">
                     Послуги
                 </h2>
 
@@ -154,8 +154,8 @@
             </div>
         </section>
 
-        <section class="gallery section">
-            <div class="container">
+        <section id="portfolio_anchor" class="gallery section">
+            <div id="seeworks_anchor" class="container">
                 <h2 class="title">
                     Мої роботи
                 </h2>
@@ -236,7 +236,7 @@
         </section>
 
         <section class="report section">
-            <div class="container">
+            <div id="clients_anchor" class="container">
                 <ul class="report__items">
                     <li class="report__item report__item--works">
                         <p class="report__text">
@@ -268,7 +268,7 @@
 
         <section class="contacts section">
             <div class="container">
-                <h2 class="title">
+                <h2 id="contacts_anchor" class="title">
                     Контакти
                 </h2>
                 <div class="contacts__wrap">
@@ -289,17 +289,18 @@
                         <ul class="social">
                             <li class="social__item">
                                 <a class="social__link"
-                                    style="background-image: url('./images/contacts/instagram.svg');" href="#"
+                                    style="background-image: url('./images/contacts/instagram.svg');"
+                                    href="https://www.instagram.com/yurii.yevchenko/"
                                     aria-label="Відкриває сторінку у instagram"></a>
                             </li>
                             <li class="social__item">
-                                <a class="social__link" href="#"
+                                <a class="social__link" href="https://www.facebook.com/yurii.yevchenko"
                                     style="background-image: url('./images/contacts/facebook.svg');"
                                     aria-label="Відкриває сторінку у facebook">
                                 </a>
                             </li>
                             <li class="social__item">
-                                <a class="social__link" href="#"
+                                <a class="social__link" href="tg://resolve?domain=YevchenkoY"
                                     style="background-image: url('./images/contacts/telegram.svg');"
                                     aria-label="Відкриває сторінку у telegram">
                                 </a>
