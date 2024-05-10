@@ -1,5 +1,5 @@
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background-color: #ffffff;
   color: #333;
   font-size: 18px;
@@ -23,7 +23,7 @@ body {
 }
 
 .title::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   height: 15px;
@@ -113,7 +113,7 @@ html {
 }
 
 .header::before {
-  content: "";
+  content: '';
   position: absolute;
   background-color: rgba(35, 82, 222, 0.5);
   width: 100%;
@@ -202,9 +202,9 @@ html {
 }
 
 .header__link::before {
-  content: "";
+  content: '';
   position: absolute;
-  background-image: url("../images/arrow.svg");
+  background-image: url('../images/arrow.svg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -282,7 +282,7 @@ html {
 }
 
 .services__item::before {
-  content: "";
+  content: '';
   width: 60px;
   height: 60px;
   display: block;
@@ -293,15 +293,15 @@ html {
 }
 
 .services__item--code::before {
-  background-image: url("../images/code-icon.svg");
+  background-image: url('../images/code-icon.svg');
 }
 
 .services__item--dev::before {
-  background-image: url("../images/dev-icon.svg");
+  background-image: url('../images/dev-icon.svg');
 }
 
 .services__item--chat::before {
-  background-image: url("../images/chat-icon.svg");
+  background-image: url('../images/chat-icon.svg');
 }
 
 .services__title {
@@ -357,6 +357,11 @@ html {
   grid-template-columns: repeat(3, 1fr);
   gap: 45px;
   margin-bottom: 60px;
+}
+
+.gallery__img {
+  height: 360px;
+  width: 360px;
 }
 
 .mixitup-control-active,
@@ -418,9 +423,9 @@ html {
 }
 
 .clients__video::before {
-  content: "";
+  content: '';
   position: absolute;
-  background-image: url("../images/clients/play.svg");
+  background-image: url('../images/clients/play.svg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -430,7 +435,7 @@ html {
 }
 
 .clients__video::after {
-  content: "";
+  content: '';
   position: absolute;
   background-color: rgba(0, 0, 0, 0.3);
   width: 100%;
@@ -480,7 +485,7 @@ html {
 }
 
 .report__item::before {
-  content: "";
+  content: '';
   width: 100px;
   height: 80px;
   display: block;
@@ -491,19 +496,19 @@ html {
 }
 
 .report__item--works::before {
-  background-image: url("../images/reviews/works.svg");
+  background-image: url('../images/reviews/works.svg');
 }
 
 .report__item--clients::before {
-  background-image: url("../images/reviews/clients.svg");
+  background-image: url('../images/reviews/clients.svg');
 }
 
 .report__item--coffee::before {
-  background-image: url("../images/reviews/coffee.svg");
+  background-image: url('../images/reviews/coffee.svg');
 }
 
 .report__item--review::before {
-  background-image: url("../images/reviews/review.svg");
+  background-image: url('../images/reviews/review.svg');
 }
 
 .report__text {
